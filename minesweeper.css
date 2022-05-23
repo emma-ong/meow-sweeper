@@ -1,0 +1,138 @@
+html, body {
+  height: 100%;
+  font-size: 150%;
+  font-family:'Shadows Into Light', cursive; sans-serif
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  flex-direction: column;
+  background-color: paleturquoise;
+}
+
+.instructions {
+  font-size: 50%;
+}
+
+#message, #notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  font-size: 1.5rem;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 5%;
+}
+
+.board div {
+  color: green;
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border: 1px #ccc dotted;
+  border-radius: 10%;
+  background-color: white;
+  margin: 3px 3px 0px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board div:hover {
+  background-color: white;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/60% url("images/angrycat.svg") orangered;
+}
+
+div.hidden {
+  background: #eee;
+}
+
+div.hidden:hover {
+  background: palegreen;
+}
+
+div.marked, div.marked:hover {
+  background: no-repeat center/60% url("images/mark.svg") greenyellow;
+}
+
+
+/* CSS */
+.button-55 {
+  visibility: hidden;
+  margin: 2%;
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family:'Shadows Into Light', cursive;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* flashing  */
+.blink-bg{
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  animation: blinkingBackground 2s infinite;
+}
+@keyframes blinkingBackground{
+  0%		{ background-color: #10c018;}
+  25%		{ background-color: #1056c0;}
+  50%		{ background-color: #ef0a1a;}
+  75%		{ background-color: #254878;}
+  100%	        { background-color: #04a1d5;}
+}
+
+.footer {
+  padding-bottom: 20%;
+}
+
+.footer-child {
+  font-size: 50%;
+text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+}
